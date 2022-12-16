@@ -82,7 +82,7 @@ def random_algorithm(bag,items_weight,items_val,n):
     max_sum = 0
     list = random.sample(range(0, n), n)
     i = 0
-    while bag >=0 and i < n:
+    while bag >0 and i < n:
         j = list[i]
         if(bag-items_weight[j]>=0):
             max_sum+=items_val[j]
